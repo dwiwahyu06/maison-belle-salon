@@ -1,0 +1,108 @@
+
+
+.riwayat-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .riwayat-container h2 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+  
+  .riwayat-item {
+    background-color:rgb(150, 143, 143);
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-left: 5px solidrgb(186, 152, 139);
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .riwayat-item:hover {
+    background-color:rgb(220, 214, 214);
+  }
+  
+  .riwayat-item p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .riwayat-item strong {
+    color: #222;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+  }
+  
+  .back-button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #ddd;
+    color: #333;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #bbb;
+  }
+  .riwayat-item {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    background: #f9f9f9;
+  }
+  
+  .riwayat-item input {
+    display: block;
+    margin-bottom: 8px;
+    padding: 6px;
+    width: 100%;
+  }
+  
+  .edit-button,
+  .delete-button,
+  .update-button,
+  .back-button {
+    margin: 6px 8px 0 0;
+    padding: 6px 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .edit-button {
+    background-color: #f0ad4e;
+    color: white;
+  }
+  
+  .delete-button {
+    background-color: #d9534f;
+    color: white;
+  }
+  
+  .update-button {
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  .back-button {
+    background-color: #0275d8;
+    color: white;
+  }
+  

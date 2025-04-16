@@ -1,0 +1,73 @@
+.kasir-container {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #eee, #ccc);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .kasir-header,
+  .kasir-footer {
+    background-color: #999;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .kasir-main {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .input-section {
+    margin-bottom: 20px;
+  }
+  
+  .input-section input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .items-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .items-list button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #666;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .items-list button:hover {
+    background-color: #444;
+  }
+  
+  .total {
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  .submit-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #333;
+  }
+  

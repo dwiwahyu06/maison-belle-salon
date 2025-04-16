@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #ffffff, #e0e0e0);
+  }
+  
+  .app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .header, .footer {
+    background-color: #d3d3d3;
+    color: #333;
+    text-align: center;
+    padding: 20px 10px;
+  }
+  
+  .container {
+    flex: 1;
+    display: flex;
+    background-image: url('https://i.pinimg.com/736x/0c/e5/68/0ce56856e40b86b4dc455d2c593e92f4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .menu-pilihan {
+    text-align: center;
+  }
+  
+  .menu-pilihan button {
+    margin: 10px;
+    padding: 12px 24px;
+    background-color: #888;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .menu-pilihan button:hover {
+    background-color: #666;
+  }
+  
+  .form {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    padding: 30px;
+    width: 90%;
+    max-width: 300px;
+    margin-top: 20px;
+    text-align: left; /* agar isi form ke kiri */
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  /* === RESPONSIVE DESIGN === */
+  
+  /* Ukuran 320px */
+  @media (max-width: 320px) {
+    .menu-pilihan button {
+      font-size: 14px;
+      padding: 10px 16px;
+    }
+  
+    .form {
+      padding: 20px;
+    }
+  
+    .header h1, .footer p {
+      font-size: 14px;
+    }
+  }
+  
+  /* Ukuran 360px - 480px (HP Umum) */
+  @media (min-width: 321px) and (max-width: 480px) {
+    .menu-pilihan button {
+      font-size: 15px;
+      padding: 10px 20px;
+    }
+  
+    .header h1, .footer p {
+      font-size: 16px;
+    }
+  }
+  
+  /* Ukuran 481px - 767px (HP besar / Foldable) */
+  @media (min-width: 481px) and (max-width: 767px) {
+    .menu-pilihan button {
+      font-size: 16px;
+      padding: 12px 22px;
+    }
+  
+    .header h1, .footer p {
+      font-size: 18px;
+    }
+  }
+  
+  /* Ukuran 768px - 1024px (Tablet) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .menu-pilihan button {
+      font-size: 17px;
+      padding: 12px 24px;
+    }
+  
+    .header h1 {
+      font-size: 24px;
+    }
+  
+    .footer p {
+      font-size: 15px;
+    }
+  }
+  
+  /* Ukuran 1025px ke atas (Desktop) */
+  @media (min-width: 1025px) {
+    .menu-pilihan button {
+      font-size: 18px;
+      padding: 14px 28px;
+    }
+  
+    .header h1 {
+      font-size: 28px;
+    }
+  
+    .footer p {
+      font-size: 16px;
+    }
+  }
+  

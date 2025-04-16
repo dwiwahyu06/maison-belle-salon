@@ -1,0 +1,143 @@
+/* Dashboard.css */
+
+.dashboard-container {
+    position: relative;
+    min-height: 100vh;
+    background-image: url('https://i.pinimg.com/736x/0c/e5/68/0ce56856e40b86b4dc455d2c593e92f4.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* White shadow overlay */
+  .dashboard-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 0;
+  }
+  
+  .dashboard-header,
+  .dashboard-main,
+  .dashboard-footer {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #333;
+  }
+  
+  .dashboard-header {
+    padding: 30px 10px;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .dashboard-main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.6);
+    width: 90%;
+    max-width: 400px;
+    border-radius: 20px;
+    padding: 30px 20px;
+    margin: 20px 0;
+  }
+  
+  .button-group {
+    margin-top: 20px;
+  }
+  
+  .button-user {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .button-user:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .dashboard-footer {
+    padding: 15px 10px;
+    font-size: 14px;
+  }
+  
+  
+  /* === RESPONSIVE BREAKPOINTS === */
+
+ /* Untuk layar kecil seperti 320px (HP mini) */
+@media (max-width: 320px) {
+    .dashboard-header {
+      font-size: 1.3rem;
+      padding: 20px 10px;
+    }
+  
+    .dashboard-main {
+      width: 95%;
+      padding: 20px 15px;
+    }
+  
+    .button-user {
+      font-size: 13px;
+      padding: 8px 14px;
+    }
+  
+    .dashboard-footer {
+      font-size: 12px;
+      padding: 10px;
+    }
+  }
+  
+  
+  /* Small devices (phones, < 400px) */
+  @media (max-width: 400px) {
+    .dashboard-header {
+      font-size: 1.5rem;
+    }
+  
+    .button-user {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  
+  /* Tablets and medium devices */
+  @media (min-width: 401px) and (max-width: 1024px) {
+    .dashboard-main {
+      max-width: 350px;
+      padding: 25px 20px;
+    }
+  
+    .dashboard-header {
+      font-size: 1.75rem;
+    }
+  }
+  
+  /* Larger screens */
+  @media (min-width: 1025px) {
+    .dashboard-main {
+      max-width: 400px;
+      padding: 30px 25px;
+    }
+  
+    .dashboard-header {
+      font-size: 2rem;
+    }
+  }
+  

@@ -1,0 +1,99 @@
+.menu-bar {
+    display: flex;
+    gap: 20px;
+    background-color: white;
+    padding: 10px 20px;
+    font-family: sans-serif;
+  }
+  
+  .menu-bar > li {
+    position: relative;
+    list-style: none;
+  }
+  
+  .menu-bar > li > a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    display: block;
+    font-weight: bold;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    width: 250px;
+  }
+  
+  .dropdown-menu li {
+    list-style: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  .dropdown-menu li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .menu-bar > li:hover .dropdown-menu {
+    display: block;
+  }
+  /* === RESPONSIVE: Menu Bar & Dropdown === */
+
+/* Layar kecil: Stack menu secara vertikal & ubah dropdown jadi klik (bisa tambahkan toggle dengan JS nanti) */
+@media (max-width: 768px) {
+    .menu-bar {
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+    }
+  
+    .menu-bar > li {
+      width: 100%;
+    }
+  
+    .menu-bar > li > a {
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    .dropdown-menu {
+      position: static;
+      width: 100%;
+      box-shadow: none;
+      padding: 0;
+    }
+  
+    .dropdown-menu li {
+      padding: 12px 20px;
+      border-top: 1px solid #eee;
+    }
+  
+    /* Opsional: Sembunyikan dropdown, akan ditampilkan via JavaScript toggle */
+    .menu-bar > li:hover .dropdown-menu {
+      display: none;
+    }
+  
+    .menu-bar > li.show-dropdown .dropdown-menu {
+      display: block;
+    }
+  }
+  
+  /* Layar sangat kecil: Ukuran teks lebih kecil */
+  @media (max-width: 400px) {
+    .menu-bar > li > a {
+      font-size: 14px;
+    }
+  
+    .dropdown-menu li {
+      font-size: 13px;
+    }
+  }
+  

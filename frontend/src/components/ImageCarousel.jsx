@@ -53,7 +53,7 @@ const ImageCarousel = () => {
     return (
       <div className="carousel-section">
         <div className="carousel-title">
-          <h2>Produk Perawatan Anata</h2>
+          <h2>Produk Perawatan Maison Belle</h2>
           <p>Layanan Kecantikan Rambut, Wajah & Kulit Tubuh</p>
         </div>
   
